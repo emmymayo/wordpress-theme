@@ -1,0 +1,109 @@
+
+/* Modify Bootstrap */
+//custom variables
+
+$primary: #c00027;
+$dh-gray-light: #e6e6e6;
+$font-family-sans-serif:  Roboto, -apple-system, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$theme-colors: (
+    "primary" : $primary,
+    "gray-light": $dh-gray-light
+    
+);
+
+$custom-colors: (
+    "icon-background" : rgba(192, 0, 39,0.15)
+    
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+/* Import Bootstrap */
+
+@import "../css/bootstrap/scss/bootstrap";
+
+html{
+    max-height: 100%;
+}
+
+/******* HEADER ********/
+.top-info-bar{
+    font-size: 0.8rem;
+    border-bottom: 1px solid var(--bs-gray-light);
+
+    &__list{
+        padding:0;
+        margin:0;
+        list-style-type: none;
+        display:inline-flex;
+        
+        li{
+            display:flex;
+            align-items: center;
+            margin:0 10px;
+        }
+
+        .fa{
+            background-color : var(--bs-icon-background);
+           
+            display:inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right:5px;
+            height:30px;
+            width:30px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+
+    }
+}
+
+/* Main Menu */
+
+.main-navigation{
+    font-weight: bold;
+    
+
+    .current-page-item .current-menu-item{
+        background-color: rgb(187, 36, 66);
+        
+        /*  color: #e5e5e5; */ 
+        
+    }
+
+    a{
+        color: #c00027;
+        padding: 0.6rem 1.0rem;
+        text-transform: uppercase;
+    }
+    a:hover{
+        color: #c000269c; 
+    }
+}
+
+/* Site main */
+
+.site-main{
+    
+}
+
+/* Footer */
+
+.start-footer{
+    
+}
+
+.end-footer{
+    background-color: #090909;
+    color: #aaa;
+
+    a{
+        color:#aaa;
+    }
+    
+    .fa{
+        padding:0.5rem 0.5rem;
+    }
+}
