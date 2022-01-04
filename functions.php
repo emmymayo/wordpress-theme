@@ -261,10 +261,10 @@ add_action( "widgets_init", 'doors_and_handles_footer_widget_two');
 
 function enqueue_custom_fonts(){
 	if(!is_admin()){
-		 wp_register_style( 'roboto', 'https://fonts.googleapis.com/css2?family=Roboto');
+		 wp_register_style( 'montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat');
 		//  wp_register_style( 'nunito', 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
 		 wp_register_style( 'nunito', 'https://fonts.googleapis.com/css2?family=Nunito');
-		 wp_enqueue_style( 'roboto' );
+		 wp_enqueue_style( 'montserrat' );
 		 wp_enqueue_style( 'nunito' );
 	}
 }
