@@ -326,3 +326,10 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 */
+
+remove_action('woocommerce_cart_is_empty', 'wc_empty_cart_message', 10);
+add_action('woocommerce_cart_is_empty', 'doors_and_handles_empty_cart', 10);
+
+function doors_and_handles_empty_cart(){
+	echo '<p class="my-5 fs-4 fw-bold text-black">Your cart is currently empty </p>';
+}
