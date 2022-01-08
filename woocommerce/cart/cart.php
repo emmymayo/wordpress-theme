@@ -32,7 +32,7 @@
 				<!-- Product Card -->
 				<div class="col-md-12 justify-content-end mx-auto">
 					<div class="row shadow-sm p-3 mb-5 bg-body rounded-0">
-						<div class="col-sm-4 justify-content-end">
+						<div class="col-md-4 justify-content-end">
 							<?php
 								$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image([200]), $cart_item, $cart_item_key );
 
@@ -43,16 +43,16 @@
 								}
 							?>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-md-6">
 							<ul class="list-unstyled">
 
 								<!-- Product Name -->
-								<li class="my-2 fw-bolder fs-4 text-black" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+								<li class="my-2 fw-bolder fs-4 text-black cart-product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 									<?php
 										if ( ! $product_permalink ) {
 											echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
 										} else {
-											echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s" class="text-decoration-none">%s</a>', esc_url( $product_permalink ), $_product->get_name() ), $cart_item, $cart_item_key ) );
+											echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s" class="text-decoration-none cart-item-title">%s</a>', esc_url( $product_permalink ), $_product->get_name() ), $cart_item, $cart_item_key ) );
 										}
 
 										do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
@@ -77,10 +77,11 @@
 								</li>
 
 								<!-- Quantity -->
-								<li class="mb-2" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
+								<li class="mb-2 " data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
+								
 									<?php
 										if ( $_product->is_sold_individually() ) {
-											$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
+											$product_quantity = sprintf( '1 <input type="hidden" class="" name="cart[%s][qty]" value="1" />', $cart_item_key );
 										} else {
 											$product_quantity = woocommerce_quantity_input(
 												array(
@@ -102,14 +103,14 @@
 								<!-- Subtotal -->
 								<li data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
 									<?php
-										echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
+										//echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 									?>
 								</li>
 							</ul>
 						</div>
 
 						<!-- Remove Btn -->
-						<div class="col-sm-2 align-self-end">
+						<div class="col-md-12 d-flex justify-content-end">
 							<?php
 								echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 									'woocommerce_cart_item_remove_link',

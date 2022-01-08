@@ -289,7 +289,7 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	return $fragments;
 }
 
-
+/* Cart Page Template Qty Filter */
 
 /**
  * Implement the Custom Header feature.
