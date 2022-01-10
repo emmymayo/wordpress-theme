@@ -18,9 +18,9 @@ get_header();
 	<main id="primary" class="site-main container">
 
 		<div class="woo-content container py-5 row">
-			<div class="col-md-3"><?php dynamic_sidebar( 'dh_filter_widget' ) ?></div>
+			
 
-            <div class="col-md-9"> <?php woocommerce_content(); ?> </div>
+            <div class="col-md-12"> <?php woocommerce_content(); ?> </div>
 
         </div>
 
