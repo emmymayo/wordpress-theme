@@ -253,6 +253,21 @@ function doors_and_handles_footer_widget_two(){
 }
 add_action( "widgets_init", 'doors_and_handles_footer_widget_two');
 
+function doors_and_handles_filter_widget(){
+	$args = array(
+			'id' => 'dh_filter_widget',
+			'name' => __('Filter Widget Area ', 'text_domain'),
+			'description' => __('Filter Widget Area', 'text_domain'),
+			'before_title' => '<h3 class="dh-filter-title">',
+			'after_title' => '<h3/>',
+			'before_widget' => '<div id="id="%1$s" class="widget %2$s">',
+			'after_widget' => '<div/>',
+
+	);
+	register_sidebar( $args );
+}
+add_action( "widgets_init", 'doors_and_handles_filter_widget');
+
 /***
  * 
  *  Custom Fonts Roboto, Nunito
@@ -291,6 +306,15 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 
 /* Cart Page Template Qty Filter */
 
+/* Woocommerce page title */
+// define the woocommerce_page_title callback 
+function filter_woocommerce_page_title( $page_title ) { 
+    
+    return $page_title; 
+}; 
+         
+// add the filter 
+add_filter( 'woocommerce_page_title', 'filter_woocommerce_page_title', 10, 1 ); 
 /**
  * Implement the Custom Header feature.
  */

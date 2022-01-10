@@ -10,16 +10,16 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main ">
 
-		<section class="error-404 not-found">
+		<section class="error-404 not-found container">
 			<header class="page-header">
 				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'doors-and-handles' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<div class="page-content">
 				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'doors-and-handles' ); ?></p>
-
+<!-- 
 					<?php
 					get_search_form();
 
@@ -49,7 +49,7 @@ get_header();
 					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$doors_and_handles_archive_content" );
 
 					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+					?> -->
 
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->

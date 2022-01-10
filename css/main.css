@@ -10979,6 +10979,12 @@ html {
 }
 
 /* Page title styles */
-.site-main .page-title .entry-title {
+.site-main .page-title {
   text-align: center;
+  font-weight: bolder;
+}
+
+.site-main .entry-title {
+  text-align: center;
+  font-weight: bolder;
 }

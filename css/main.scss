@@ -115,7 +115,13 @@ html{
 /* Page title styles */
 
 .site-main{
-    .page-title .entry-title{
+    
+    .page-title{
         text-align: center;
+        font-weight: bolder;
+    }
+    .entry-title{
+        text-align: center;
+        font-weight: bolder;
     }
 }
