@@ -18,12 +18,40 @@ get_header();
 			</header><!-- .page-header -->
 
 			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'doors-and-handles' ); ?></p>
+				<p class="text-center"><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'doors-and-handles' ); ?></p>
+
+			<!-- Product category and new in -->
+
+		<section class="container ">
+            <div class="container my-5">
+                <h6 class="h6 text-center text-uppercase fw-bolder"> Shop by category</h6>
+                <!-- Centered Dash -->
+                <div class="d-flex justify-content-center align-items-center">
+                    <hr class=" text-primary fw-bolder" style="width:5rem;height:0.2rem">
+                </div>
+            </div>
+            
+            <?php echo do_shortcode('[product_categories limit="-1" columns="4" hide_empty="1"]'); ?>
+        </section>
+        
+
+        <section class="container">
+            <div class="container my-5">
+                <h6 class="h6 text-center text-uppercase fw-bolder"> New in</h6>
+                <!-- Centered Dash -->
+                <div class="d-flex justify-content-center align-items-center">
+                    <hr class=" text-primary fw-bolder" style="width:5rem;height:0.2rem">
+                </div>
+                
+            </div>
+            
+            <?php echo do_shortcode('[products limit="4" columns="4" orderby="id" order="DESC" visibility="visible"]'); ?>
+        </section>
 <!-- 
 					<?php
-					get_search_form();
+					// get_search_form();
 
-					the_widget( 'WP_Widget_Recent_Posts' );
+					// the_widget( 'WP_Widget_Recent_Posts' );
 					?>
 
 					<div class="widget widget_categories">
@@ -41,7 +69,7 @@ get_header();
 							);
 							?>
 						</ul>
-					</div><!-- .widget -->
+					</div>
 
 					<?php
 					/* translators: %1$s: smiley */
