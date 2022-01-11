@@ -10988,3 +10988,13 @@ html {
   text-align: center;
   font-weight: bolder;
 }
+
+.site-main .wc-proceed-to-checkout a .checkout-button {
+  background-color: #c00027;
+  color: #e6e6e6;
+}
+
+.site-main .wc-proceed-to-checkout a .button {
+  background-color: #c00027;
+  color: #e6e6e6;
+}

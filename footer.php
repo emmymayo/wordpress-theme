@@ -29,7 +29,7 @@
 				</div>
 			</section>
 			<section class="end-footer py-4">
-				<div class="container">
+				<div class="container mb-5 py-2">
 					<div class="row d-flex flex-column flex-md-row justify-content-between">
 						
 						<div class="col p-2">
@@ -52,12 +52,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="container my-5">
-						<p class="text-center"> Copyright &copy <?php echo date('Y') ?> Doorsandhandles. All rights reserved.</p>
+					<div class="container my-5 pb-5">
+						<p class="text-center"> Copyright &copy <?php echo date('Y') ?> Doorsandhandle. All rights reserved.</p>
 					</div>
+					
 				</div>
 			</section>
 		</div><!-- .site-info -->
+		<div class="mobile-bottom-bar bg-white shadow-lg py-3 px-2 d-flex d-md-none justify-content-between position-fixed bottom-0 start-0 end-0" style="z-index:99">
+		<a href="<?php echo esc_url( home_url( '/' ) ).'/my-account'; ?>" rel="home">
+		<span class="text-primary"><i class="fa fa-user fa-2x"></i></span>            
+        </a>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+		<span class="text-primary"><i class="fa fa-home fa-2x"></i></span>            
+        </a>
+		<a href="<?php echo esc_url( home_url( '/' ) ).'/cart'; ?>" rel="home">
+		<span class="text-primary"><i class="fa fa-shopping-cart fa-2x"></i></span>            
+        </a>
+			
+
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
