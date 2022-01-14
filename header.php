@@ -59,7 +59,7 @@
 
 	</div> -->
 
-	<header id="masthead" class="site-header ">
+	<header id="masthead" class="site-header sticky-top glass ">
 
 		<div class="d-none d-md-block container-fluid  py-2 ">
 			<div class="row align-items-center justify-content-between">
@@ -100,7 +100,7 @@
 						<svg xmlns="http://www.w3.org/2000/svg" class="text-primary" style="height:1rem;width:1rem" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
 						</svg>
-						<sup class="bg-primary text-white px-1   rounded-circle" style="font-size: xx-small"><?php echo WC()->cart->get_cart_contents_count(); ?> </sup>
+						<!-- <sup class="bg-primary text-white px-1   rounded-circle" style="font-size: xx-small"><?php echo WC()->cart->get_cart_contents_count(); ?> </sup> -->
 						</a>
 					</div>
 						
@@ -123,14 +123,14 @@
 				
 				
 
-				<div class="col site-header__cart d-flex justify-content-end" >
-					<a class="cart-customlocatio text-decoration-none" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
-						<!-- <i class="fa fa-shopping-cart fa-2x"></i>	 -->
+				<div  class="col site-header__cart d-flex justify-content-end" >
+					<!-- <a class="cart-customlocatio text-decoration-none" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+						<i class="fa fa-shopping-cart fa-2x"></i>	
 					<svg xmlns="http://www.w3.org/2000/svg" class="text-primary" style="height:1.5rem;width:1.5rem" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
 					</svg>
 					<sup class="bg-primary text-white px-1   rounded-circle" style="font-size: xx-small"><?php echo WC()->cart->get_cart_contents_count(); ?> </sup>
-					</a>
+					</a> -->
 					<!-- Toggle -->
 					<button class="navbar-toggler text-primary border-none" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon fa fa-bars"></span>

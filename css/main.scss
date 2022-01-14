@@ -120,8 +120,106 @@ html{
         text-align: center;
         font-weight: bolder;
     }
+    .wc-proceed-to-checkout{
+        a{
+            .checkout-button{
+                background-color: #c00027;
+                color:#e6e6e6;
+            }
+            .button{
+                background-color: #c00027;
+                color:#e6e6e6;
+            }
+        }
+    }
+    
+}
+/* Cart Page title */
+article{
     .entry-title{
         text-align: center;
         font-weight: bolder;
     }
+}
+
+/* Single product  */
+
+
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.alt {
+    background-color: #c00027;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+.woocommerce div.product span.price, .woocommerce div.product p.price {
+    color: #c00027;
+    font-size: 1.25em;
+}
+
+
+
+.woocommerce div.product .product_title {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.posted_in{
+    a{
+        color:#c00027;
+    }
+}
+/* On sale element */
+.woocommerce span.onsale {
+    padding: 0em 1em;
+    font-size: 1em;
+    font-weight: 700;
+    top: -0.5em;
+    left: -0.5em;
+    margin: 0;
+    border-radius: 0; 
+    background-color: #c00026d7;
+    color: white;
+    font-size: 0.657em;
+    z-index: 9;
+}
+
+/* Product title in loop */
+.woocommerce ul.products li.product h3, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product .woocommerce-loop-category__title {
+    padding: 0.5em 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 700;
+    color:#090909;
+    text-transform:capitalize;
+}
+
+/* Product price in loop */
+.woocommerce ul.products li.product .price {
+    color: #c00027;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    font-size: 0.857em;
+}
+
+/* Add to cart button */
+
+.woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit {
+  
+    color: #e6e6e6;
+    background-color: #c00027;
+ 
+}
+
+
+a.text-decoration-none.cart-item-title a.text-decoration-none.cart-item-title:visited a.text-decoration-none.cart-item-title:hover  {
+    color:#c00027
+}
+
+.glass{
+    backdrop-filter: blur(14px) saturate(152%);
+    -webkit-backdrop-filter: blur(14px) saturate(152%);
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }

@@ -17,7 +17,7 @@ get_header();
 
 	<main id="primary" class="site-main " style="">
         <section class="container py-2">
-            <h1 class="  text-uppercase text-center fw-bolder mt-4">Welcome to <span class="text-primary">doors</span> & <br>handle</h1>
+            <h1 class="  text-uppercase text-center fw-bolder mt-4">Welcome to <span class="text-primary">doors</span> & <br>handles</h1>
             <p class="text-center mt-3 py-2 fw-bold">Your favourite store for security, German and vintage doors</p>
         </section>
         <section class="header d-none">

@@ -34,7 +34,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 		<h2 class="fw-bold fs-2"><?php esc_html_e( 'LOGIN', 'woocommerce' ); ?></h2>
 
-			<form class="border-0 col-6 align-item-start woocommerce-form woocommerce-form-login login" method="post">
+			<form class="border-0 col-lg-6 align-item-start woocommerce-form woocommerce-form-login login" method="post">
 
 				<?php do_action( 'woocommerce_login_form_start' ); ?>
 
@@ -75,7 +75,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 			<h2 class="fw-bold fs-2"><?php esc_html_e( 'REGISTER', 'woocommerce' ); ?></h2>
 
-			<form method="post" class="col-6 woocommerce-form woocommerce-form-register register" <?php do_action( 'woocommerce_register_form_tag' ); ?> >
+			<form method="post" class="col-lg-6 woocommerce-form woocommerce-form-register register" <?php do_action( 'woocommerce_register_form_tag' ); ?> >
 
 				<?php do_action( 'woocommerce_register_form_start' ); ?>
 

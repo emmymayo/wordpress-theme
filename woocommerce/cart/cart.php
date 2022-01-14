@@ -5,8 +5,14 @@
 	<div class= "container row">
 		<!-- Side column -->
 		<div class="col-md-3 justify-content-start d-none d-md-block">
-			<a href="<?php echo get_home_url().'/checkout' ?>" class="btn my-3 rounded-0 border-none text-sm text-white bg-primary px-2 py-1">Proceed to Checkout</a>
-			<a href="<?php echo get_site_url().'/shop' ?>" class="btn shadow-sm rounded-0 border-none px-3 bg-white text-primary px-2 py-1">Continue Shopping</a>
+			<a href="<?php echo get_home_url().'/checkout' ?>" class="w-75 btn my-3 rounded-0 border-none text-sm text-white bg-primary px-1 py-1">Proceed to Checkout</a>
+			<a href="<?php echo get_site_url().'/shop' ?>" class="w-75 btn shadow-sm rounded-0 border-none text-sm  bg-white text-primary px-1 py-1">Continue Shopping</a>
+			<form class="woocommerce-cart-form mt-5" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
+				
+				<button type="submit" class="w-75 btn shadow-sm rounded-0 border-none bg-primary text-sm text-white px-1 py-1" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+
+				<?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
+			</form>
 		</div>
 		
 		
@@ -30,8 +36,8 @@
 				?>
 
 				<!-- Product Card -->
-				<div class="col-md-12 justify-content-end mx-auto">
-					<div class="row shadow-sm p-3 mb-5 bg-body rounded-0">
+				<div class="col-md-12 justify-content-end mx-auto woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+					<div class="row shadow-sm p-3 mb-3 bg-body rounded-0">
 						<div class="col-md-4 justify-content-end">
 							<?php
 								$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image([200]), $cart_item, $cart_item_key );
@@ -52,7 +58,7 @@
 										if ( ! $product_permalink ) {
 											echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;' );
 										} else {
-											echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s" class="text-decoration-none cart-item-title">%s</a>', esc_url( $product_permalink ), $_product->get_name() ), $cart_item, $cart_item_key ) );
+											echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s" class="text-decoration-none cart-item-title text-primary">%s</a>', esc_url( $product_permalink ), $_product->get_name() ), $cart_item, $cart_item_key ) );
 										}
 
 										do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
@@ -135,6 +141,8 @@
 			<?php do_action( 'woocommerce_cart_contents' ); ?>
 
 			<div>
+				
+			<button type="submit" class="button mb-5" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
 				<?php if ( wc_coupons_enabled() ) { ?>
 					<div class="coupon">
 						<label for="coupon_code"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?></button>
@@ -142,7 +150,6 @@
 					</div>
 					<?php } ?>
 
-					<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
 
 					<?php do_action( 'woocommerce_cart_actions' ); ?>
 
