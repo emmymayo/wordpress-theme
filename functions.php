@@ -304,17 +304,14 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	return $fragments;
 }
 
-/* Cart Page Template Qty Filter */
+/* Remove add to cart button in shop and category page */
+add_action( 'woocommerce_after_shop_loop_item', 'remove_add_to_cart_buttons', 1 );
 
-/* Woocommerce page title */
-// define the woocommerce_page_title callback 
-function filter_woocommerce_page_title( $page_title ) { 
-    
-    return $page_title; 
-}; 
-         
-// add the filter 
-add_filter( 'woocommerce_page_title', 'filter_woocommerce_page_title', 10, 1 ); 
+function remove_add_to_cart_buttons() {
+  if( is_product_category() || is_shop() || is_front_page(  )) { 
+	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart' );
+  }
+}
 /**
  * Implement the Custom Header feature.
  */

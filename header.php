@@ -59,7 +59,7 @@
 
 	</div> -->
 
-	<header id="masthead" class="site-header ">
+	<header id="masthead" class="site-header sticky-top glass ">
 
 		<div class="d-none d-md-block container-fluid  py-2 ">
 			<div class="row align-items-center justify-content-between">
@@ -123,7 +123,7 @@
 				
 				
 
-				<div class="col site-header__cart d-flex justify-content-end" >
+				<div  class="col site-header__cart d-flex justify-content-end" >
 					<a class="cart-customlocatio text-decoration-none" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
 						<!-- <i class="fa fa-shopping-cart fa-2x"></i>	 -->
 					<svg xmlns="http://www.w3.org/2000/svg" class="text-primary" style="height:1.5rem;width:1.5rem" fill="none" viewBox="0 0 24 24" stroke="currentColor">

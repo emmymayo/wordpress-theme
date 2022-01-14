@@ -59,15 +59,15 @@
 				</div>
 			</section>
 		</div><!-- .site-info -->
-		<div class="mobile-bottom-bar bg-white shadow-lg py-3 px-2 d-flex d-md-none justify-content-between position-fixed bottom-0 start-0 end-0" style="z-index:99">
+		<div class="mobile-bottom-bar shadow-lg glass py-3 px-2 d-flex d-md-none justify-content-between position-fixed bottom-0 start-0 end-0" style="z-index:99">
 		<a href="<?php echo esc_url( home_url( '/' ) ).'/my-account'; ?>" rel="home">
-		<span class="text-primary"><i class="fa fa-user fa-2x"></i></span>            
+		<span class="text-primary p-1 "><i class="fa fa-user fa-2x"></i></span>            
         </a>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-		<span class="text-primary"><i class="fa fa-home fa-2x"></i></span>            
+		<span class="text-primary p-1 "><i class="fa fa-home fa-2x"></i></span>            
         </a>
 		<a href="<?php echo esc_url( home_url( '/' ) ).'/cart'; ?>" rel="home">
-		<span class="text-primary"><i class="fa fa-shopping-cart fa-2x"></i></span>            
+		<span class="text-primary p-1 "><i class="fa fa-shopping-cart fa-2x"></i></span>            
         </a>
 			
 
