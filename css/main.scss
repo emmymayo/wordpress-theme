@@ -160,7 +160,8 @@ article{
 .woocommerce div.product .product_title {
     font-weight: bold;
     font-size: 1.5em;
-    text-transform: capitalize;
+    text-transform:lowercase;
+    text-transform:capitalize;
 }
 
 .posted_in{
@@ -190,6 +191,7 @@ article{
     font-size: 1em;
     font-weight: 700;
     color:#090909;
+    text-transform:lowercase;
     text-transform:capitalize;
 }
 
@@ -216,6 +218,67 @@ a.text-decoration-none.cart-item-title a.text-decoration-none.cart-item-title:vi
     color:#c00027
 }
 
+
+/* MY account nav */
+
+.woocommerce-account .woocommerce-MyAccount-navigation {
+    margin:0;
+    width:100%;
+    float:none;
+
+    ul{
+        border-bottom: 2px solid #c00027;
+        margin:0;
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+        overflow-x:auto;
+        max-width: 100%;
+        display:flex;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+        justify-items: start;
+        justify-content: start;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    li{
+        margin:0;
+        
+        padding-right: 1rem;
+        a, a:visited {
+            text-decoration: none;
+            color:#c00027;
+            font-weight: 600;
+            
+        }
+        a:hover, a:active{
+            color:#c00026a2;
+        }
+        
+    }   
+    /* float: left;
+    width: 30%; */
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+    padding-top: 1rem;
+    width:100%;
+    float:none;
+    margin:5px auto;
+    margin-bottom: 2rem;
+    a, a:visited {
+        text-decoration: none;
+        color:#c00027;
+        font-weight: 500;
+        
+    }
+    a:hover, a:active{
+        color:#c00026a2;
+    }
+    
+}
+
 .glass{
     backdrop-filter: blur(14px) saturate(152%);
     -webkit-backdrop-filter: blur(14px) saturate(152%);
@@ -223,3 +286,4 @@ a.text-decoration-none.cart-item-title a.text-decoration-none.cart-item-title:vi
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
+
