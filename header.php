@@ -16,9 +16,12 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	
 
 	<?php wp_head(); ?>
 </head>
+<!-- Loader -->
+
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
@@ -64,7 +67,7 @@
 		<div class="d-none d-md-block container-fluid  py-2 ">
 			<div class="row align-items-center justify-content-between">
 				<div class="col-md-1 site-header__logo" >
-					<?php the_custom_logo(); ?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <?php the_custom_logo(); ?> </a>
 				</div>
 
 				<div class="col-md-8  site-header__menu" >
@@ -117,7 +120,7 @@
 		<div class="container d-md-none py-2">
 			<div class="row align-items-center justify-content-between">
 				<div class="col site-header__logo" >
-					<?php the_custom_logo(); ?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <?php the_custom_logo(); ?> </a>
 				</div>
 
 				

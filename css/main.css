@@ -10505,6 +10505,7 @@ article .entry-title {
 .woocommerce div.product .product_title {
   font-weight: bold;
   font-size: 1.5em;
+  text-transform: lowercase;
   text-transform: capitalize;
 }
 
@@ -10534,6 +10535,7 @@ article .entry-title {
   font-size: 1em;
   font-weight: 700;
   color: #090909;
+  text-transform: lowercase;
   text-transform: capitalize;
 }
 
@@ -10554,6 +10556,58 @@ article .entry-title {
 
 a.text-decoration-none.cart-item-title a.text-decoration-none.cart-item-title:visited a.text-decoration-none.cart-item-title:hover {
   color: #c00027;
+}
+
+/* MY account nav */
+.woocommerce-account .woocommerce-MyAccount-navigation {
+  margin: 0;
+  width: 100%;
+  float: none;
+  /* float: left;
+  width: 30%; */
+}
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+  border-bottom: 2px solid #c00027;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+  overflow-x: auto;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  justify-items: start;
+  justify-content: start;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation li {
+  margin: 0;
+  padding-right: 1rem;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation li a, .woocommerce-account .woocommerce-MyAccount-navigation li a:visited {
+  text-decoration: none;
+  color: #c00027;
+  font-weight: 600;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation li a:hover, .woocommerce-account .woocommerce-MyAccount-navigation li a:active {
+  color: #c00026a2;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+  padding-top: 1rem;
+  width: 100%;
+  float: none;
+  margin: 5px auto;
+  margin-bottom: 2rem;
+}
+.woocommerce-account .woocommerce-MyAccount-content a, .woocommerce-account .woocommerce-MyAccount-content a:visited {
+  text-decoration: none;
+  color: #c00027;
+  font-weight: 500;
+}
+.woocommerce-account .woocommerce-MyAccount-content a:hover, .woocommerce-account .woocommerce-MyAccount-content a:active {
+  color: #c00026a2;
 }
 
 .glass {
