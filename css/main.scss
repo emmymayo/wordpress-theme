@@ -296,3 +296,10 @@ a.text-decoration-none.cart-item-title a.text-decoration-none.cart-item-title:vi
       width: 50%;
     }
   }
+
+.woocommerce ul.products li.product a img {
+    margin: 0 auto;
+}
+ul.products.columns-4 {
+    text-align: center;
+}
