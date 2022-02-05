@@ -37,19 +37,19 @@ get_header();
             <div class="carousel-inner">
                 <div class="carousel-item active">
                 <!--<img src="https://via.placeholder.com/1024x500?text=Doors+And+Handles+Placeholder" class="d-block w-100" alt="..."> -->
-				<img src="<?php echo get_template_directory_uri().'/images/carousel-1.png' ?>" class="d-block w-100" alt="...">
+				<img src="<?php echo get_template_directory_uri().'/images/DRRRS1.png' ?>" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri().'/images/carousel-2.png' ?>" class="d-block w-100" alt="...">
+                <img src="<?php echo get_template_directory_uri().'/images/DRRRS2.png' ?>" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                    
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri().'/images/carousel-3.png' ?>" class="d-block w-100" alt="...">
+                <img src="<?php echo get_template_directory_uri().'/images/DRRRS3.png' ?>" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     
                 </div>
