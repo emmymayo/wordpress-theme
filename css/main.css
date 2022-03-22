@@ -11159,4 +11159,13 @@ a.text-decoration-none.cart-item-title a.text-decoration-none.cart-item-title:vi
 ul.products.columns-4 {
   text-align: center;
 }
+
+body {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */

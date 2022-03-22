@@ -43,16 +43,45 @@
 						<div class="col p-2">
 							<h6 class="fs-6 fw-bold">PAYMENT METHODS & PARTNERS</h6>
 							<div class="d-flex">
-								
+
 								<span><i class="fa fa-cc-mastercard"></i></span>
-								<!-- <span><i class="fa fa-cc-stripe"></i></span> -->
 								<span><i class="fa fa-cc-visa"></i></span>
-								<!-- <span><i class="fa fa-paypal"></i></span>
-								<span><i class="fa fa-google-wallet"></i></span> -->
+								<span><i class="fa fa-paypal"></i></span>
+								<!-- <span><i class="fa fa-cc-verve"></i></span> -->
+								<!-- <span><i class="fa fa-cc-stripe"></i></span> -->
+								<!-- <span><i class="fa fa-google-wallet"></i></span> -->
+
 							</div>
 						</div>
+
+						<div class="col">
+							<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="post">
+							<input required class="rounded border-0" placeholder="Email">
+							<button class="border-0 rounded bg-primary text-white">Submit</button>
+							</form>
+						</div>
+
+						
 					</div>
-					<div class="container my-5 pb-5">
+
+					<div class="mt-3 row d-flex flex-column flex-md-row justify-content-between">
+						<div class="col">
+							<ul class="m-0">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><li>About Us</li></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><li>Contact Us</li></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><li>Terms & Condition</li></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><li>Privacy & Policies</li></a>
+							</ul>
+						</div>
+						<div class="col">
+							<ul class="m-0">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><li>Support</li></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><li>FAQs</li></a>
+							</ul>
+						</div>
+					</div>
+
+					<div class="container mt-3 pb-5">
 						<p class="text-center"> Copyright &copy <?php echo date('Y') ?> Doorsandhandle. All rights reserved.</p>
 					</div>
 					
