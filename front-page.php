@@ -68,6 +68,16 @@ get_header();
             </button>
             </div>
         </section>
+		
+		
+	<!-- Product slider plugin (Woo - product slider) shortcode sample docs https://docs.essentialplugin.com/woo-product-slider-and-carousel-with-category/ -->
+	<!-- spacer -->
+	<!--  
+		<div class="my-5">&nbsp;</div>
+		<section class="container ">
+		<?php //echo do_shortcode('[wcpscwc_pdt_slider type="products" limit="10" slide_to_show=”2″ dots=”false” arrows=”false”]'); ?>
+		</section> 
+	-->
 
         <!-- spacer -->
         <div class="my-5">&nbsp;</div>
