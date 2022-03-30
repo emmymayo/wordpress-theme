@@ -16,15 +16,9 @@
 			<section class="start-footer py-4">
 				<div class="container">
 					<div class="row">
-<<<<<<< HEAD
 						<!-- <div class="col-md-2">
 							<?php //the_custom_logo(); ?>
 						</div> -->
-=======
-						<div class="col-md-2">
-							<?php //the_custom_logo(); ?>
-						</div>
->>>>>>> 81ef1b1be468f73f0edbe326352ba1bd86f3e04d
 						<div class="col-md-5">
 							<?php dynamic_sidebar( 'dh_footer_widget_one' ) ?>
 						</div>
@@ -41,11 +35,7 @@
       <div class="row text-center p-3 text-md-left">
         <div class="col-lg-3 col-md-6 p-2  mb-4 mb-md-0 mx-auto text-lg-start mt-3  text-muted">
           <div class="text-center">
-<<<<<<< HEAD
             <svg width="28px" height="28px" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-=======
-            <svg width="32px" height="32px" fill="none" stroke="currentColor" viewBox="0 0 24 24"
->>>>>>> 81ef1b1be468f73f0edbe326352ba1bd86f3e04d
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
@@ -60,11 +50,7 @@
 
         <div class="col-lg-3 col-md-6 mb-4 p-2 mb-md-0 mx-auto text-lg-start mt-3  text-muted">
           <div class="text-center ">
-<<<<<<< HEAD
             <svg width="28px" height="28px" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-=======
-            <svg width="32px" height="32px" fill="none" stroke="currentColor" viewBox="0 0 24 24"
->>>>>>> 81ef1b1be468f73f0edbe326352ba1bd86f3e04d
               xmlns="http://www.w3.org/2000/svg">
               <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
