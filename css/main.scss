@@ -288,12 +288,12 @@ a.text-decoration-none.cart-item-title a.text-decoration-none.cart-item-title:vi
 }
 
 .woocommerce ul.products li.product a img{
-    width: 50% !important;
+    width: 100% !important;
   }
   
   @media only screen and (max-width: 480px) {
     img.custom-logo{
-      width: 50%;
+      width: 80%;
     }
   }
 
@@ -309,4 +309,7 @@ body{
     a{
         text-decoration: none;
     }
+}
+svg.flutter-wave.mt-4 {
+    margin-left: -10px;
 }

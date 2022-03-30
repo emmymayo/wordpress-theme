@@ -107,9 +107,9 @@
 						</a>
 					</div>
 						
-					<a href="# "> <i class="text-primary fa fa-instagram rounded-circle"></i> </a>
-					<a href="# "> <i class="text-primary fa fa-facebook rounded-circle"></i> </a>
-					<a href="# "> <i class="text-primary fa fa-twitter rounded-circle"></i> </a>
+					<a href="https://instagram.com/doorsandhandle?utm_medium=copy_link"> <i class="text-primary fa fa-instagram rounded-circle"></i> </a>
+					<a href="https://facebook.com"> <i class="text-primary fa fa-facebook rounded-circle"></i> </a>
+					<a href="https://twitter.com"> <i class="text-primary fa fa-twitter rounded-circle"></i> </a>
 				</div>
 				
 				
