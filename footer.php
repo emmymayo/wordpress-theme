@@ -121,6 +121,11 @@
                 <span class="d-block"><i class="fa fa-phone "></i></span>
                 <span class="d-block px-2">+234-703-079-1154</span>
               </p>
+
+              <p class="pt-2 pe-2 text-white d-flex align-items-center justify-content-start justify-content-md-start">
+                <span class="d-block"><i class="fa fa-home"></i></span>
+                <span class="d-block px-2">show room: 6A Goba close, Wuse 2, Abuja.</span>
+              </p>
           
 
           </div>
@@ -150,7 +155,7 @@
             <h5 class="text-uppercase mb-4 font-weight-bold px-1">Follow Us</h5>
             <section class="ms-0 mx-0 ps-0 mb-4">
               <!-- Facebook -->
-              <a class=" m-1 p-0 rounded-circle" href="https://facebook.com" role="button"><i
+              <a class=" m-1 p-0 rounded-circle" href="https://www.facebook.com/Doors-and-Handles-103592745650465" role="button"><i
                   class="fa fa-facebook-f"></i></a>
 
               <!-- Twitter -->

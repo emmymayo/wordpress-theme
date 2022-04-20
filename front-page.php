@@ -14,10 +14,7 @@
 
 get_header();
 ?>
-
-	<main id="primary" class="site-main " style="">
-        
-        <section class="header d-none">
+<section class="header d-none">
             <?php if ( get_header_image() ) : ?>
                 <div id="site-header" class="d-flex justify-content-center">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -27,153 +24,52 @@ get_header();
             <?php endif; ?>
 
         </section>
-        <!-- Carousel -->
-        <section class="dh-carousel container">
-        <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
-           
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <!--<img src="https://via.placeholder.com/1024x500?text=Doors+And+Handles+Placeholder" class="d-block w-100" alt="..."> -->
-				<img src="<?php echo get_template_directory_uri().'/images/DRRRS1.png' ?>" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    
-                </div>
-                </div>
-                <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri().'/images/DRRRS2.png' ?>" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                   
-                </div>
-                </div>
-                <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri().'/images/DRRRS3.png' ?>" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    
-                </div>
-                </div>
-                <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri().'/images/DRRRS4.png' ?>" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    
-                </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
-        </section>
-		
-		
-	<!-- Product slider plugin (Woo - product slider) shortcode sample docs https://docs.essentialplugin.com/woo-product-slider-and-carousel-with-category/ -->
-	<!-- spacer -->
-	<!--  
-		<div class="my-5">&nbsp;</div>
-		<section class="container ">
-		<?php //echo do_shortcode('[wcpscwc_pdt_slider type="products" limit="10" slide_to_show=”2″ dots=”false” arrows=”false”]'); ?>
-		</section> 
-	-->
 
-        <!-- spacer -->
-        <div class="my-5">&nbsp;</div>
-        <section class="container ">
-            <div class="container my-5">
-                <h6 class="h6 text-center text-uppercase fw-bolder"> Shop by category</h6>
-                <!-- Centered Dash -->
-                <div class="d-flex justify-content-center align-items-center">
-                    <hr class=" text-primary fw-bolder" style="width:5rem;height:0.2rem">
-                </div>
-            </div>
-            
-            <?php echo do_shortcode('[product_categories limit="-1" columns="4" hide_empty="1"]'); ?>
-        </section>
-        
-
-        <section class="container">
-            <div class="container my-5">
-                <h6 class="h6 text-center text-uppercase fw-bolder"> New in</h6>
-                <!-- Centered Dash -->
-                <div class="d-flex justify-content-center align-items-center">
-                    <hr class=" text-primary fw-bolder" style="width:5rem;height:0.2rem">
-                </div>
-                
-            </div>
-            
-            <?php echo do_shortcode('[products limit="4" columns="4" orderby="id" order="DESC" visibility="visible"]'); ?>
-        </section>
-
-        <section class="container">
-            <div class="container my-5">
-                <h6 class="h6 text-center text-uppercase fw-bolder"> Featured</h6>
-                <!-- Centered Dash -->
-                <div class="d-flex justify-content-center align-items-center">
-                    <hr class=" text-primary fw-bolder" style="width:5rem;height:0.2rem">
-                </div>
-                
-            </div>
-            
-            <?php echo do_shortcode('[products limit="4" columns="4" orderby="id" order="DESC" visibility="featured"]'); ?>
-        </section>
-
-        <section class="container">
-            <div class="container my-5">
-            <h6 class="h6 text-center text-uppercase fw-bolder"> Best selling</h6>
-                <!-- Centered Dash -->
-                <div class="d-flex justify-content-center align-items-center">
-                    <hr class=" text-primary fw-bolder" style="width:5rem;height:0.2rem">
-                </div>
-                
-            </div>
-            
-            <?php echo do_shortcode('[products limit="4" columns="4" orderby="id" order="DESC" best_selling="true"]'); ?>
-        </section>
-
-        <section class="container  my-5 ">
-            <div class=" container my-5 ">
-            <h6 class="h6 text-center text-uppercase fw-bolder"> Popular Now </h6>
-                <!-- Centered Dash -->
-                <div class="d-flex justify-content-center align-items-center">
-                    <hr class=" text-primary fw-bolder" style="width:5rem;height:0.2rem">
-                </div>
-            </div>
-            
-            <?php  echo do_shortcode('[products limit="4" columns="4" orderby="popularity" class="quick-sale" on_sale="true" ]'); ?>
-
-            <?php 
-                // $products = wc_get_products(array(
-                // 'limit'  => 6, 
-                // 'status' => 'publish', // Only published products
-                // 'orderBy' =>'rand'
-                // ) );  
-                
-            ?>
-            <!-- <div class="row  justify-content-between ">
-            <?php foreach($products as $product): ?>
-                <a class="d-block" href="<?php echo 'product/'.$product->get_slug(); ?>">
-                <div class="col-sm-4 d-flex align-items-center my-2 shadow-sm flex-grow-1">
-                
-                    <div>
-                        <?php echo wp_get_attachment_image( get_post_thumbnail_id( $product->id ), [100,100]); ?>
+    <main>
+        <!-- <div class="circle"></div> -->
+        <div class="big-wrapper">
+            <div class="showcase-area">
+                <div class="lp_container">
+                    <div class="left">
+                        <div class="big-title">
+                            <h1 class="text-semibold fw-bold" >Your Favourite Store For</h1>
+                            <h1 class="text-primary text-semibold fw-semibold">Security, Wooden, Luxury Doors and Locks.</h1>
+                        </div>
+                        <p class="text-md fw-bold lp_text">
+                            Doors and handles, your number one choice for high quality security, 
+                            interior, flush, steel doors, handles and accessories custom designed products.
+                        </p>
+                        
+                        <div class="cta animate__shakeY">
+                            <a href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>" class="animate__animated animate__shakeY animate__slower animate__infinite rounded btn bg-primary text-white lp_btn">Shop Now !!!</a>
+                        </div>
                     </div>
-                    <div class="d-flex flex-column mx-3 ">
-                        <div class="mb-4 text-truncate"><?php echo $product->get_name(); ?>  </div>
-                        <div class="fw-bold"><?php echo  get_woocommerce_currency_symbol(get_woocommerce_currency()).$product->get_price(); ?></div>
+    
+                    <div class="right">
+                        <div class="lp_imgBox">
+                            <img src="<?php echo get_template_directory_uri().'/images/2.png' ?>" alt="image_1" class="lp_doors">
+                        </div>
                     </div>
-                
                 </div>
-                </a>
-            <?php endforeach; ?>
-            </div> -->
-        </section>
+            </div>
 
-        
-
-	</main><!-- #main -->
+            <div class="bottom-area mt-1 d-none d-md-block">
+                <div class="lp_container">
+                    <ul class="lp_thumb">
+                        <li><img src="<?php echo get_template_directory_uri().'/images/2.png' ?>" onclick="imgSlider('<?php echo get_template_directory_uri().'/images/2.png' ?>')"></li>
+                        <li><img src="<?php echo get_template_directory_uri().'/images/1.png' ?>" onclick="imgSlider('<?php echo get_template_directory_uri().'/images/1.png' ?>')"></li>
+                        <li><img src="<?php echo get_template_directory_uri().'/images/4.png' ?>" onclick="imgSlider('<?php echo get_template_directory_uri().'/images/4.png' ?>')"></li>
+                        <li><img src="<?php echo get_template_directory_uri().'/images/5.png' ?>" onclick="imgSlider('<?php echo get_template_directory_uri().'/images/5.png' ?>')"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.lp_doors').src = anything;
+        }
+    </script>
 
 <?php
 //  get_sidebar();
