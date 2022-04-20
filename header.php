@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 	<?php wp_head(); ?>
 </head>
@@ -79,7 +79,7 @@
 									<i class="fa fa-bars"></i>	<?php esc_html_e( '', 'doors-and-handles' ); ?>
 									</button>
 								</div>
-								<div class="col-12 text-center">
+								<div class="text-primary col-12 text-center">
 								<?php
 								wp_nav_menu(
 									array(
@@ -108,7 +108,7 @@
 					</div>
 						
 					<a href="https://instagram.com/doorsandhandle?utm_medium=copy_link"> <i class="text-primary fa fa-instagram rounded-circle"></i> </a>
-					<a href="https://facebook.com"> <i class="text-primary fa fa-facebook rounded-circle"></i> </a>
+					<a href="https://www.facebook.com/Doors-and-Handles-103592745650465"> <i class="text-primary fa fa-facebook rounded-circle"></i> </a>
 					<a href="https://twitter.com"> <i class="text-primary fa fa-twitter rounded-circle"></i> </a>
 				</div>
 				
